@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 53804549417729345}
   - component: {fileID: 6250954088978561379}
   - component: {fileID: 4117177506454315253}
-  - component: {fileID: -7291863054866835563}
+  - component: {fileID: 6574913802965335682}
   m_Layer: 0
   m_Name: pig_king
   m_TagString: Untagged
@@ -185,12 +185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Health","value":{"$content":15.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Puff","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 3821483518596965855, guid: 237f6fa0653f98e4f9742888c097c2f2, type: 3}
---- !u!114 &-7291863054866835563
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &6574913802965335682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,10 +196,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7604700918801901633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Script: {fileID: 11500000, guid: 4dcbcc1dd2729d0479cb0592f93d18ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 76150598e6249664289276ebc0795d5c, type: 2}
+  health: 12
+  puffPrefab: {fileID: 3821483518596965855, guid: 237f6fa0653f98e4f9742888c097c2f2, type: 3}

@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 1111750839}
   - component: {fileID: 1111750841}
   - component: {fileID: 1111750840}
+  - component: {fileID: 1111750842}
   m_Layer: 0
   m_Name: SlingshotController
   m_TagString: Untagged
@@ -456,7 +457,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111750838}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
   m_Name: 
@@ -483,6 +484,19 @@ MonoBehaviour:
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 6317576151398149412, guid: 822d6c596b077544885ce90d0febc775, type: 3}
+--- !u!114 &1111750842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111750838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebe6559e516e164dae55262e4d696e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdPrefab: {fileID: 6317576151398149412, guid: 822d6c596b077544885ce90d0febc775, type: 3}
 --- !u!1 &1400801812
 GameObject:
   m_ObjectHideFlags: 0

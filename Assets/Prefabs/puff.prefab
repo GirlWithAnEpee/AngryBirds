@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4543851475618058100}
   - component: {fileID: 704806741317923319}
   - component: {fileID: 8989334291206129130}
-  - component: {fileID: 4371391353354044077}
+  - component: {fileID: -7797243082610306996}
   m_Layer: 0
   m_Name: puff
   m_TagString: Untagged
@@ -123,7 +123,7 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
---- !u!114 &4371391353354044077
+--- !u!114 &-7797243082610306996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,10 +132,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3821483518596965855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Script: {fileID: 11500000, guid: dd41106f6660ac5489e198950092e214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: eabcc3dc06308e64dbd2aa6be613633c, type: 2}
