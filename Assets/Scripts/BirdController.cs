@@ -5,13 +5,17 @@ using UnityEngine;
 public class BirdController : MonoBehaviour
 {
     private GameObject curBird;
+    private GameObject lineRight;
+    private GameObject lineLeft;
     public GameObject birdPrefab;
-    float magicConst = 30;
+    public float magicConst = 30;
+    public float flightStrength = 15;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        lineLeft = GameObject.Find("LineLeft");
+        lineRight = GameObject.Find("LineRight");
     }
 
     // Update is called once per frame
@@ -24,6 +28,15 @@ public class BirdController : MonoBehaviour
             {
                 curBird = Instantiate(birdPrefab, transform.position, transform.rotation);
             }
+
+            // ниточки рогатки ст€гиваютс€ к середине
+            lineLeft.GetComponent<LineRenderer>().SetPosition(0, transform.position);
+            lineRight.GetComponent<LineRenderer>().SetPosition(0, transform.position);
+        } else
+        {
+            // если птица есть - ниточки рогатки должны следовать за ней
+            lineLeft.GetComponent<LineRenderer>().SetPosition(0, curBird.transform.position);
+            lineRight.GetComponent<LineRenderer>().SetPosition(0, curBird.transform.position);
         }
 
         // отпустили Ћ ћ - запускаем птицу в полЄт и обнул€ем переменную
@@ -38,7 +51,7 @@ public class BirdController : MonoBehaviour
         if (Input.GetMouseButton(0) && curBird is not null)
         {
             Vector3 v = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * Time.deltaTime * magicConst + curBird.transform.position;
-            Vector3 newPos = Vector3.ClampMagnitude(v - transform.position, 2);
+            Vector3 newPos = Vector3.ClampMagnitude((v - transform.position) * flightStrength, 2);
             curBird.transform.position = transform.position + newPos;
         }
     }
