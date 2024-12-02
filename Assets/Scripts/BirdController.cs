@@ -27,6 +27,7 @@ public class BirdController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 curBird = Instantiate(birdPrefab, transform.position, transform.rotation);
+                Camera.main.GetComponent<CameraController>().SetBird(curBird);
             }
 
             // ниточки рогатки стягиваются к середине
